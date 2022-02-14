@@ -31,7 +31,7 @@ map = leaflet(data=SQImap.df) %>%
   addTiles() %>%
   addAwesomeMarkers(lng = SQImap.df$lon,lat = SQImap.df$lat,popup=paste( "CSCI:", SQImap.df$CSCI, "<br>" ,"ASCI:", SQImap.df$ASCI,"<br>","IPI:",SQImap.df$IPI,"<br>",'CRAM:',SQImap.df$CRAM),icon=icons ,clusterOptions = markerClusterOptions(removeOutsideVisibleBounds = F))
  
-#map
+
 
 
 
@@ -50,10 +50,6 @@ map = addAwesomeMarkers(map,lng=beach_map$LONDD,lat=beach_map$LATDD,popup = past
 map
 
 
-
-addLayersControl(
-  overlayGroups = names(),
-  options = layersControlOptions(collapsed = FALSE)
 
   
 
