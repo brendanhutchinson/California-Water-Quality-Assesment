@@ -459,7 +459,7 @@ B.icons <- awesomeIcons(icon = 'glyphicon-globe',markerColor= "lightred",iconCol
 map = leaflet(data=SQImap.df) %>% 
   setView(lat = 33.811148, lng = -117.521611, zoom = 6.2) %>%
   addTiles() %>%
-  addAwesomeMarkers(lng = SQImap.df$lon,lat = SQImap.df$lat,popup=paste( "CSCI:", SQImap.df$CSCI, "<br>" ,"ASCI:", SQImap.df$ASCI,"<br>","IPI:",SQImap.df$IPI,"<br>",'CRAM:',SQImap.df$CRAM),icon=icons ,clusterOptions = markerClusterOptions(removeOutsideVisibleBounds = F))
+  addAwesomeMarkers(lng = SQImap.df$lon,lat = SQImap.df$lat,popup=paste("SQI:", SQImap.df$SQI,"<br>", "CSCI:", SQImap.df$CSCI, "<br>" ,"ASCI:", SQImap.df$ASCI,"<br>","IPI:",SQImap.df$IPI,"<br>",'CRAM:',SQImap.df$CRAM),icon=icons ,clusterOptions = markerClusterOptions(removeOutsideVisibleBounds = F))
 
 
 
